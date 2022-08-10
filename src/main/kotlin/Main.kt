@@ -9,10 +9,7 @@ import kotlinx.coroutines.flow.buffer
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.map
 import java.util.concurrent.Executors
-
-//sealed class CounterMsg
-//object IncCounter : CounterMsg() // one-way message to increment counter
-//class GetCounter(val response: CompletableDeferred<Int>) : CounterMsg() // a request with reply
+// (c) Salman ALim Marvasti
 //val concurrentMap = java.util.ConcurrentHashMap<String, Int>()
 var dispatcher: ExecutorCoroutineDispatcher = Executors.newFixedThreadPool(4).asCoroutineDispatcher()
 var reader: TextUrlReader = TextUrlReader()
